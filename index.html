@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.8/dist/vue.js"></script>
+    <title>vue-email-list</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id="app">
+      <h1>Genero 10 email</h1>
+      <ol v-if="emailArr.length == 10">
+        <li v-for="email in emailArr">{{email}}</li>
+      </ol>
+      <span v-else>Caricamento...</span>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
